@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 function getRandomComputerResult() {
   const options = ["Rock", "Paper", "Scissors"];
   const numberIndex = Math.floor(Math.random() * 3)
@@ -12,3 +15,8 @@ function hasPlayerWonTheRound(player, computer) {
     (player === "Paper" && computer === "Rock")
   );
 }
+
+function getRoundResults(userOption) {
+  const computerResult = getRandomComputerResult();
+  hasPlayerWonTheRound
+} 
